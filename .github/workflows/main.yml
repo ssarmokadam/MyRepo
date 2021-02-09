@@ -3,7 +3,6 @@
 name: sample workflow
 
 env:
-  ORG_NAME: "sample"
   REPO_SOURCE: "MyRepo"
   GH_REPO_SOURCE: "github.com/${REPO_SOURCE}.git"
 
@@ -31,6 +30,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo ${{ ORG_NAME }}
+        run: echo Hi
 
 
